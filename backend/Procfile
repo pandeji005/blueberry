@@ -1,0 +1,1 @@
+web: gunicorn blueberry_backend.wsgi --log-file -
