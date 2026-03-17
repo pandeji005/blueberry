@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlueBerry – Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- CURVED HEADER -->
+    <div class="curve-top">
+      <div class="nav-logo">bb</div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="home-content">
+
+      <!-- SECTION 1 — Category Menu (the circle with text) -->
+      <div class="category-menu">
+        <a href="#" class="category-menu-item">Biryani's →</a>
+        <a href="#" class="category-menu-item">Tiffins →</a>
+        <a href="#" class="category-menu-item">Snacks →</a>
+        <a href="#" class="category-menu-item">Drinks →</a>
+      </div>
+
+      <!-- SECTION 2 — Food Category Cards (2x2 grid) -->
+      <h2 class="section-title">What's on your mind?</h2>
+
+      <div class="category-grid">
+
+        <a href="restaurants.html" class="category-card">
+          <span class="category-card-emoji">🍚</span>
+          <span class="category-card-name">Biryani</span>
+        </a>
+
+        <a href="restaurants.html" class="category-card">
+          <span class="category-card-emoji">🥪</span>
+          <span class="category-card-name">Snacks</span>
+        </a>
+
+        <a href="restaurants.html" class="category-card">
+          <span class="category-card-emoji">🥤</span>
+          <span class="category-card-name">Drinks</span>
+        </a>
+
+        <a href="restaurants.html" class="category-card">
+          <span class="category-card-emoji">🍽️</span>
+          <span class="category-card-name">Dine In</span>
+        </a>
+
+      </div>
+
+      <!-- SECTION 3 — Restaurant Cards -->
+      <h2 class="section-title">Popular Restaurants</h2>
+
+      <div class="restaurant-grid" id="restaurant-grid">
+  <!-- Loaded dynamically by JavaScript -->
+              <div class="loading-text">Loading restaurants...</div>
+      </div>
+
+      <!-- SECTION 4 — Discover More Button -->
+      <a href="#" class="btn-primary">Discover More</a>
+
+    </div>
+
+    <!-- BOTTOM CURVE -->
+    <div class="curve-bottom"></div>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

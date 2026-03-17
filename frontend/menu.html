@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlueBerry – Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- HEADER -->
+    <div class="curve-top">
+      <div class="restaurants-nav">
+        <button class="back-btn" onclick="goBack()">←</button>
+        <div class="nav-logo">Shah Ghouse</div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="home-content">
+
+      <!-- MENU SECTION -->
+      <h2 class="section-title">Biryani</h2>
+
+      <div class="menu-list" id="menu-list">
+  <!-- Loaded dynamically by JavaScript -->
+          <div class="loading-text">Loading menu...</div>
+      </div>
+
+      <!-- ADD TO CART BUTTON -->
+      <a href="cart.html" class="btn-primary">View Cart</a>
+
+    </div>
+
+    <div class="curve-bottom"></div>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
