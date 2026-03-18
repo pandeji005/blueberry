@@ -24,7 +24,7 @@ async function handleSignIn() {
   if (!emailRegex.test(email)) { alert('Please enter a valid email!'); return }
 
   try {
-    const response = await fetch('${API_URL}/api/auth/login/', {
+    const response = await fetch(`${API_URL}/api/auth/login/`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password })
@@ -67,7 +67,7 @@ async function handleSignUp() {
   if (!/[a-zA-Z]/.test(password)) { alert('Password must contain at least one letter!'); return }
 
   try {
-    const response = await fetch('${API_URL}/api/auth/register/', {
+    const response = await fetch(`${API_URL}/api/auth/register/`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, email, password })
@@ -321,7 +321,7 @@ async function loadRestaurants() {
   if (!grid) return
 
   try {
-    const response = await fetch('${API_URL}/api/restaurants/')
+    const response = await fetch(`${API_URL}/api/restaurants/`)
     const restaurants = await response.json()
 
     let html = ''
@@ -360,7 +360,7 @@ async function loadMenu() {
   }
 
   try {
-    const response   = await fetch('${API_URL}/api/restaurants/${restaurantId}/')
+    const response   = await fetch(`${API_URL}/api/restaurants/${restaurantId}/`)
     const restaurant = await response.json()
 
     // Update page title
